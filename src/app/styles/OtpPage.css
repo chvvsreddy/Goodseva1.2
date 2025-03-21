@@ -1,0 +1,126 @@
+@media screen and (min-device-width: 390px) and (max-device-width: 882px) {
+  #offeringTxt {
+    color: rgb(111, 25, 25);
+    font-size: 30px;
+    font-family: El Messiri;
+  }
+
+  #otp-above-text {
+    font-size: 18;
+    text-align: center;
+  }
+
+  #otp-button {
+    margin-top: 10px;
+    margin-left: 90px;
+  }
+  .bg-lp-div {
+    padding: 10px;
+  }
+  .input-details {
+    padding: 30;
+  }
+  #Text-Register {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-top: 18;
+  }
+  #otp-button {
+    padding: 20;
+    background-color: #7f1126;
+    color: white;
+    width: 135px;
+    height: 42px;
+    border-radius: 6px;
+  }
+  .left-register-div {
+    background-color: #7f1126;
+    border-radius: 12px;
+    padding: 10px;
+  }
+  .providers {
+    padding: 20;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  #offeringTxt {
+    color: rgb(111, 25, 25);
+    font-size: 48px;
+    font-family: El Messiri;
+  }
+
+  #otp-above-text {
+    font-size: 24;
+    text-align: center;
+  }
+
+  #otp-button {
+    padding: 20;
+    background-color: #7f1126;
+    color: white;
+    width: 135px;
+    height: 42px;
+    border-radius: 6px;
+  }
+  .providers {
+    padding: 20;
+    margin: 10;
+  }
+
+  #link-to-register {
+    margin-top: 10px;
+  }
+
+  #Text-Register {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 10px;
+  }
+  #otp-inputs {
+    margin-left: 40px;
+  }
+  .main-register {
+    background-color: #f8fafb;
+    width: 100%;
+    height: 100%;
+  }
+  .left-register-div {
+    background-color: #7f1126;
+    border-radius: 12px;
+    padding: 10px;
+  }
+}
+
+
+.bg-lp {
+  background-color: #7f1126;
+  width: 100%;
+  height: 100vh;
+}
+.bg-lp-div {
+  background-color: white;
+  border-radius: 12px;
+  height: 80vh;
+}
+.header-number {
+  border: 1px solid #60d72a;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+.header-mail {
+  border: 1px solid #60d72a;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+}

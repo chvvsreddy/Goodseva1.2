@@ -1,0 +1,359 @@
+body{font-family: Arial, Helvetica, sans-serif!important;}
+
+@media screen and (min-device-width: 390px) and (max-device-width: 882px) {
+  .L3Main {
+    padding: 15px;
+  }
+  .Lp4Main {
+    margin: 15px;
+    background-color: #f9faf9;
+  }
+  .Lp4MainTitle {
+    font-size: 0px;
+  }
+  .banner-main {
+    height: 60vh;
+  }
+  .main-Lp6 {
+    padding-top: 0;
+    margin: 8px;
+  }
+  .f-resources {
+    padding-top: 20;
+  }
+  .Lp2-right {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  .Lp2-ratings {
+    width: 100%;
+    height: 206px;
+    border-radius: 20px;
+    color: white;
+    padding: 20px;
+  }
+  .L2-P {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .Lp2-Left_img {
+    width: 100%;
+    height: 420px;
+    border-radius: 20px;
+  }
+  .Lp3-paragraph {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .Lp4-right-button {
+    width: 154px;
+    height: 44px;
+    border-radius: 6px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    padding-right: 24px;
+    background-color: #C62300;
+    color: white;
+    margin-top: 8px;
+  }
+  .Lp6-Img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  #footer-head-Title {
+    font-size: 20px;
+  }
+  #rating-stars {
+    width: 176px;
+    height: 32px;
+  }
+  #rating-text {
+    color: white;
+    font-size: 24;
+    font-weight: 400;
+    width: 330px;
+    height: 34px;
+  }
+  #rating-desc {
+    color: #98a393;
+    font-size: 18;
+    font-weight: 400;
+    width: 274px;
+    height: 29px;
+  }
+  #lp3-head-text {
+    font-size: 20px;
+    font-weight: 400;
+    color: yellow;
+    margin-bottom: 0;
+  }
+  #lp3-head-span {
+    color: white;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  #lp3-banner {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    width: auto;
+    height: auto;
+  }
+  #main-head-Lp6 {
+    margin-top: 20px;
+    font-size: 30;
+    font-weight: 400;
+  }
+  .bg-lp-div {
+    height: 110vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  #main-head-Lp6 {
+    font-size: 48;
+    font-weight: 400;
+  }
+
+  .L3Main {
+    padding-top: 100;
+    padding-bottom: 100;
+  }
+  .Lp4Main {
+    padding-top: 100;
+    background-color: #f9faf9;
+    padding-bottom: 100;
+  }
+  .Lp4MainTitle {
+    width: 600px;
+    height: 134px;
+    font-size: 48px;
+    font-weight: 400;
+  }
+  .Flex-Lp4 {
+    margin-top: 50;
+  }
+
+  .banner-main {
+    height: 110vh;
+  }
+  .main-Lp6 {
+    padding-top: 50;
+    padding-bottom: 50;
+  }
+  .Lp2-right {
+    width: 460px;
+    height: 436px;
+    border-radius: 20px;
+    background-color: rgba(152, 163, 147, 1);
+  }
+  .Lp2-ratings {
+    width: 460px;
+    height: 206px;
+    border-radius: 20px;
+    color: white;
+    padding: 20px;
+  }
+  .L2-P {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .Lp2-Left_img {
+    width: 100%;
+    height: 436px;
+    border-radius: 20px;
+  }
+  .Lp3-Head {
+    margin-top: 70;
+    width: 536px;
+    height: 93px;
+  }
+  .Lp3-paragraph {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    width: 560px;
+    height: 78px;
+    margin-bottom: 20px;
+  }
+  .Lp4-right-content {
+    width: 460px;
+    height: 58px;
+    color: #808380;
+  }
+  .Lp4-right-button {
+    width: 154px;
+    height: 44px;
+    border-radius: 6px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    padding-right: 24px;
+    background-color: #C62300;
+    color: white;
+  }
+  .lp4-box-head {
+    font-weight: 400;
+    font-size: 24px;
+  }
+  .Lp6-Img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  #footer-head-Title {
+    font-size: 24px;
+  }
+  #rating-stars {
+    width: 176px;
+    height: 32px;
+  }
+  #rating-text {
+    color: white;
+    font-size: 24;
+    font-weight: 400;
+    width: 330px;
+    height: 34px;
+  }
+  #rating-desc {
+    color: #98a393;
+    font-size: 18;
+    font-weight: 400;
+    width: 274px;
+    height: 29px;
+  }
+  #main-title-Lp2 {
+    font-size: 42;
+    font-weight: 400;
+  }
+  #lp3-banner {
+    color: white;
+    font-size: 48px;
+    font-weight: 400;
+    width: 560px;
+    height: 134px;
+  }
+  #lp3-head-text {
+    font-size: 48px;
+    font-weight: 400;
+    color: yellow;
+    margin-bottom: 0;
+  }
+  #lp3-head-span {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 639px) and (max-width: 1024px) {
+  .Lp2-right {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  .Lp2-ratings {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    color: white;
+    padding: 20px;
+  }
+  #rating-stars {
+    width: 100%;
+    height: auto;
+  }
+  #rating-text {
+    color: white;
+    font-size: 12;
+    font-weight: 400;
+    width: 100%;
+    height: auto;
+  }
+  #rating-desc {
+    color: #98a393;
+    font-size: 15;
+    font-weight: 400;
+    width: 100%;
+    height: auto;
+  }
+  .L2-P {
+    font-size: 16px;
+    font-weight: 400;
+    width: auto;
+  }
+  #main-title-Lp2 {
+    font-size: 32;
+    font-weight: 400;
+  }
+  .Lp2-Left_img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  #lp3-banner {
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    width: 100%;
+    height: auto;
+  }
+  .Lp3-paragraph {
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  #lp3-head-text {
+    font-size: 40px;
+    font-weight: 400;
+    color: yellow;
+    margin-bottom: 0;
+  }
+  #lp3-head-span {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .Lp3-Head {
+    width: auto;
+    height: auto;
+  }
+  #footer-head-Title {
+    font-size: 20px;
+  }
+}
+.List {
+  padding: 30;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.List:hover {
+  transition: border-color 0.3 ease;
+  border-color: #00000026;
+}
+#offeringTxt {
+  color: #C62300;
+}
+
+.L3Main{background-color: #000;border-radius: 20px;}
+.Lp2-ratings {background-color: #2A004E;}
+.lp5-banner{background:url('../../../public/trafficls.png') top center no-repeat ;background-size: cover;padding: 50px;border-radius: 20px;position: relative;}
+.lp5-banner::after{background-color: #000;
+  opacity: .7;border-radius: 20px;
+  position: absolute;
+  top: 0;content: "";
+  left: 0;
+  width: 100%;
+  bottom: 0;}
+  .lp5-banner .banner{position: relative;z-index: 999;}
+  .lp5-banner .banner h2{color: #C62300;}

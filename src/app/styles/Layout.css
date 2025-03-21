@@ -1,0 +1,32 @@
+
+@media screen and (min-device-width: 390px) and (max-device-width: 932px) {
+  #navbar-Title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #7f1126;
+    font-family: El Messiri;
+  }
+}
+
+@media (min-width: 1024px) {
+  #navbar-Title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #7f1126;
+    font-family: El Messiri;
+  }
+  .navbar-bg {
+    width: 100%;
+    max-height: 100%;
+    padding: 20;
+  }
+  #nav-text {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.navItem{padding: 5px;border-radius: 5px;}
+.navItem span{padding:3px}
+.navItem.selected span{color: #2a004e;}
+.navItem.selected{background-color:#fff;font-weight: 700;box-shadow: 0px 1px 1px #ccc;}

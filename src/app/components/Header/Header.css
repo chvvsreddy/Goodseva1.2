@@ -1,0 +1,88 @@
+.header-column1,
+.header-column2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.header-column1 {
+  gap: 30px;
+  justify-content: start;
+}
+
+
+.header-column2 {
+  gap: 10px;
+  justify-content: end;
+}
+
+.header-column2 .header-button {
+  font-size: 16px;
+  height: 40px;
+}
+
+.header-column2 .menu-button {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: black;
+}
+.header-column2 .nav-button1,.nav-button2{
+    font-weight: 500;
+    font-size: 16px;
+    height: 42px;
+}
+
+
+.navbar-icon{
+    font-size: 25px;
+   gap: 20px;
+}
+.mobile-number{
+    color: white;
+}
+.navbar-mail{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.header-second-row{
+    padding: 10px 40px;
+}
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .header-column1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+
+  .header-column2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-column2 .header-button {
+    font-size: 14px;
+    height: 35px;
+  }
+
+  .header-column2 .ant-input-affix-wrapper {
+    width: 100% !important;
+  }
+  .search-header{
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+
+
+  .header-column2 .header-button {
+    font-size: 14px;
+    height: 30px;
+  }
+}

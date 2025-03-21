@@ -1,0 +1,103 @@
+#main-head {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#file-upload-btn {
+  border: 1px solid white;
+  width: fit-content;
+  height: fit-content;
+  padding: 10;
+  border-radius: 30;
+  background-color: #7f1126;
+  text-align: center;
+}
+#truck-type1 {
+  font-size: 14px;
+  font-weight: 600;
+}
+#upload-block {
+  width: 100%;
+  height: auto;
+  padding: 15;
+  border: 1px dashed #b0b0b0;
+  border-radius: 5px;
+}
+#drag-text1 {
+  font-size: 14px;
+  font-weight: 400;
+}
+#drag-text2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #848080;
+}
+
+
+#selecting-trucks1 img {
+  height: 50;
+  transform: scaleX(-1);
+  margin-bottom: 10;
+  display: block;
+  margin-left: 20;
+}
+#selecting-trucks1 {
+  width: 165;
+  height: 92;
+  border: 1px solid rgba(196, 196, 196, 1);
+  border-radius: 8;
+  padding: 10;
+}
+#open-truck-div {
+  margin-top: -25px;
+}
+#open-truck-text {
+  font-size: 12px;
+  font-weight: 600;
+}
+#truck-properities {
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.css-dev-only-do-not-override-1kf000u.ant-radio-button-wrapper-checked:not(
+    .ant-radio-button-wrapper-disabled
+  ) {
+  color: #7f1126;
+  border-color: #7f1126;
+}
+.ant-radio-button-wrapper {
+  font-size: 12px;
+  font-weight: 500;
+}
+.ant-radio-group-large
+  :where(.css-dev-only-do-not-override-1kf000u).ant-radio-button-wrapper {
+  font-size: 12px;
+  width: 120px;
+  text-align: center;
+}
+.materials-btn {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+#materials-btn-text-main {
+  font-size: 12px;
+  font-weight: 400;
+}
+#materials-btn-text {
+  font-size: 10px;
+  font-weight: 400;
+  color: #b0b0b0;
+}
+#saveAsDraftBtn {
+  width: 100%;
+  background-color: #fec6d1;
+  color: #7f1126;
+}
+#postBtn {
+  width: 100%;
+  background-color: #7f1126;
+  color: #ffffff;
+}
+

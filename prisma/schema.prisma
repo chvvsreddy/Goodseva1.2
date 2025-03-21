@@ -1,0 +1,153 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Order {
+  id             Int      @id @default(autoincrement())
+  customerName   String
+  customerPhone  String
+  pickupAddress  String
+  dropoffAddress String
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model User {
+  Id        Int      @id @default(autoincrement())
+  Email     String   @unique
+  Password  String
+  Role      Role
+  CreatedAt DateTime @default(now())
+}
+
+enum Role {
+  Admin
+  Company_user
+  Logistics_Comapany
+  Truck_Driver
+  Shipper
+}
+
+model Logistics_Comapany {
+  Id        Int      @id @default(autoincrement())
+  Name      String
+  Address   String
+  Phone     Int
+  Email     String
+  CreatedAt DateTime @default(now())
+  Driver    Driver[]
+  Truck     Truck[]
+  Load      Load[]
+}
+
+model Company_user {
+  Id            Int      @id @default(autoincrement())
+  Name          String
+  CIN_No        String
+  GST_No        String
+  Address       String
+  Phone         Int
+  Company_Email String
+  CreatedAt     DateTime @default(now())
+  Load          Load[]
+}
+
+model Driver {
+  Id                   Int                @id @default(autoincrement())
+  Logistics            Logistics_Comapany @relation(fields: [Logistics_company_Id], references: [Id])
+   Logistics_company_Id Int
+   First_Name           String
+   Last_Name            String
+   License_Number       String
+   Insurance            String?
+   Phone                Int
+   Email                String
+   CreatedAt            DateTime           @default(now())
+   updatedAt            DateTime           @updatedAt
+   Truck                Truck[]
+   Assignment           Assignment[]
+   
+}
+
+model Truck {
+  Id                   Int                @id @default(autoincrement())
+  Logistics            Logistics_Comapany @relation(fields: [Logistics_company_Id], references: [Id])
+  Logistics_company_Id Int
+  Driver               Driver             @relation(fields: [Driver_Id], references: [Id])
+  Driver_Id            Int
+  Truck_Number         String             @unique
+  Truck_Model          String
+  Capacity_In_Tons     Float
+  Insurance            String?
+  CreatedAt            DateTime           @default(now())
+  Assignment           Assignment[]
+}
+
+model Load {
+  Id                   Int                 @id @default(autoincrement())
+  Company              Company_user        @relation(fields: [Company_user_Id], references: [Id])
+  Company_user_Id      Int
+  Logistics            Logistics_Comapany  @relation(fields: [Logistics_company_Id], references: [Id])
+  Logistics_company_Id Int
+  Load_Type            String
+  From_Origin          String
+  To_Destination       String
+  No_Of_Trucks         Int
+  Start_Date           DateTime
+  Price_Type           String
+  Price                Int
+  Price_Finalized      Int
+  Insurance            String?
+  Weight_In_Tons       Float
+  Status               Load_Status         @default(Draft)
+  Payment_Status       Load_Payment_Status
+  CreatedAt            DateTime            @default(now())
+  Assignment           Assignment[]
+}
+
+enum Load_Status {
+  Draft
+  Posted
+  Assigned
+  Loaded
+  Started
+  In_Transit
+  Delivered
+}
+
+enum Load_Payment_Status {
+  Paritial_Payment_Done
+  Final_Payment_Done
+  Final_Payment_Pending
+}
+
+model Assignment {
+  Id         Int               @id @default(autoincrement())
+  Load       Load              @relation(fields: [Load_Id], references: [Id])
+  Load_Id    Int
+  Driver     Driver            @relation(fields: [Driver_Id], references: [Id])
+  Driver_Id  Int
+  Truck      Truck             @relation(fields: [Truck_Id], references: [Id])
+  Truck_Id   Int
+  AssignedAt DateTime          @default(now())
+  Status     Assignment_Status @default(Assigned)
+}
+
+enum Assignment_Status {
+  Assigned
+  Loaded
+  Started
+  In_Transit
+  Completed
+}

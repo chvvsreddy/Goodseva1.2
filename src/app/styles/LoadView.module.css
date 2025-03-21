@@ -1,0 +1,40 @@
+.LoadDetails {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.FromLocation{
+    font-size: 12px;
+    font-weight: 500;
+    color: #B0B0B0;
+}
+#TrucksText{
+    font-size: 16px;
+    font-weight: 600;
+
+}
+#NoofTruckstext{
+    font-size: 12px;
+    font-weight: 500;
+    color: #B0B0B0;
+    
+}
+.TruckDetails{
+    width: 100%;
+    border: 1px solid #E3E3E3;
+    border-radius:6px ;
+
+}
+#TruckStatus{
+    color: white;
+    border-radius: 20px;
+    padding-left: 8;
+    padding-right: 8;
+}
+#TruckId{
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.loadComponent{border: 1px solid #E8E8E8; border-radius:12px;padding: 10px 12px;}
