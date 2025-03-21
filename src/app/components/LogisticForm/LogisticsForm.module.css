@@ -95,7 +95,7 @@
   border-color: #800000;
 }
 
-:global(.ant-radio-button-wrapper:not(:first-child)::before) {
+.ant-radio-button-wrapper:not(:first-child)::before {
   width: 0 !important; /* Override the default width */
 }
 
