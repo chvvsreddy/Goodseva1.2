@@ -23,13 +23,13 @@ export default function RegisterPage() {
             <Link href={"/"}>
             <img src="goodseva-logo.png" alt=" Goodseva logo" height={50}/>
             </Link>
-            
             </Flex>
-            <Typography.Title level={2} id="Text-Register"> Register
+            <div style={{ margin: 20 }}>
+              <Typography.Title id="login-text">Register</Typography.Title>
+              <Typography.Title level={3} id="login-para">
+                Very good works are waiting for you
               </Typography.Title>
-            <Typography.Title level={3} id="quote">
-              Very good works are waiting for you
-            </Typography.Title>
+              </div>      
             <Flex className="input-details" vertical gap={30} align="flex-end">
                 <Input size="large" placeholder=" Mobile Number" prefix={<MobileOutlined />} id="mobile-input" type="number" value={mobileNo}
                 onChange={(e) => { setMobileNo(e.target.value); }}
@@ -37,7 +37,7 @@ export default function RegisterPage() {
               <Input size="large" placeholder=" Email" prefix={<MailOutlined />} id="email-input" value={mail}
                 onChange={(e) => { setMail(e.target.value); }}
               />
-              <Link href={`/register/${mobileNo}/step1`}>
+              <Link href={`/Register/${mobileNo}/step1`}>
                 <Button id="otp-button">Get OTP</Button>
               </Link>
             </Flex>
