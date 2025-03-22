@@ -10,8 +10,6 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.5.2",
-    "@babel/plugin-transform-class-properties": "^7.25.9",
-    "@babel/plugin-transform-object-rest-spread": "^7.25.9",
     "@prisma/client": "^6.4.1",
     "@react-google-maps/api": "^2.20.5",
     "antd": "^5.22.5",
@@ -32,6 +30,8 @@
   "devDependencies": {
     "@aws-amplify/backend": "^1.14.3",
     "@aws-amplify/backend-cli": "^1.5.0",
+    "@babel/plugin-transform-class-properties": "^7.25.9",
+    "@babel/plugin-transform-object-rest-spread": "^7.25.9",
     "@babel/plugin-transform-typescript": "7.19.3",
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
