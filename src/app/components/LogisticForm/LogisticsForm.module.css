@@ -99,11 +99,11 @@
   width: 0 !important; /* Override the default width */
 }
 
-input[type="number"]::-webkit-inner-spin-button, 
+/* input[type="number"]::-webkit-inner-spin-button, 
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
+} */
 
 /* Media queries for mobile responsiveness */
 @media (max-width: 768px) {

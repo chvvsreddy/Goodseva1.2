@@ -209,3 +209,10 @@ a {
 
 .singlelINE{ white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .filterBlock{background-color: rgba(42, 0, 78, 0.1);padding: 20px;}
+
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
